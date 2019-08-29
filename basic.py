@@ -35,16 +35,16 @@ if __name__ == '__main__':
 # @app.route('/')
 # def index():
 #     # Welcome Page
-#     return "<h1>Welcome! Go to /puppy_latin/name to see your name in puppy latin!</h1>"
+#     return "<h1>Welcome! Go to /name_latin/name to see your name in latin!</h1>"
 
-# @app.route('/puppy_latin/<name>')
-# def puppylatin(name):
-#     # Puppy Latin the name that comes in!
-#     pupname = ''
+# @app.route('/name_latin/<name>')
+# def namelatin(name):
+#     # Name Latin the name that comes in!
+#     _name = ''
 #     if name[-1]=='y':
-#         pupname = name[:-1]+'iful'
+#         _name = name[:-1]+'iful'
 #     else:
-#         pupname = name+'y'
+#         _name = name+'y'
 
-#     return "<h1>Hi {}! Your puppylatin name is {} </h1>".format(name,pupname)
+#     return "<h1>Hi {}! Your latin name is {} </h1>".format(name,_name)
 
