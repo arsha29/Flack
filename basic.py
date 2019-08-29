@@ -10,9 +10,14 @@ def index():
 def info():
     return '<h1>this is the information page!</h1>'
 
+
 @app.route('/page/<name>')
 def page(name):
-    # Page for an individual puppy.
+    # Page for an individual page.
     return '<h1>This is a page for {}<h1>'.format(name)
+    #return "Upper case: {}".format(name.upper())
+    #return "100th letter: {}".format(name[100])
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
